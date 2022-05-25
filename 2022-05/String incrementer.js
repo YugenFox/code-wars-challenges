@@ -1,6 +1,25 @@
 //https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/javascript
 
+//By - Narsat, a502370
+function incrementString2(str){
+  var c = str[str.length-1];
+    switch(c){
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8': return str.substring(0, str.length-1) + (parseInt(c)+1);
+            case '9': return incrementString2(str.substring(0, str.length-1)) + 0;
+            default: return str+"1";
+                }
+}
 
+
+//My solution
 function incrementString (strng) {
     // store string portion & digits portion
     let theString = strng.replace(/[0-9]/g, '');
