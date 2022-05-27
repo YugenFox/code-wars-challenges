@@ -1,6 +1,31 @@
 //https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript
 
-//Mine
+//My 2nd go
+function pigIt2(str){
+    //Get word array to manipulate 
+    let igPayayordsWay = str.split(' ')
+    //add pigness
+    let etray = igPayayordsWay.map(word => {
+
+        //has punctuation in word
+        if(word.includes('.') || word.includes(',') || word.includes('!') || word.includes('?') ){
+            return  `${word}`
+        }else{//No punctuation in word
+            return  `${word.slice(1)}${word.slice(0,1)}ay `//move first letter to end, then add "ay"
+        }
+    }).join('')
+
+    console.log(etray)
+    //return ret
+  }
+  pigIt2("The man !")
+  pigIt2("Hello test2 !")
+  
+  
+
+
+
+//My first go
 /* could have used map better, really treated it as forEach loop.
     //the ret += in the fun I could have made returns.
         //then after map done .join(' ') to add spaced betweeen the elements, but make them one string.
