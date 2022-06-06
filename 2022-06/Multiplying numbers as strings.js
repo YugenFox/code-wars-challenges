@@ -1,8 +1,9 @@
 //https://www.codewars.com/kata/55911ef14065454c75000062/train/javascript
 
+//well BigInt is apparently a default impbedded function that just works. 
 function multiply(a, b) {return (BigInt(a) * BigInt(b)).toString()}
 
-//main function
+//old main function
 function multiply1(a, b)
 {
     //multiply a and b with long division loop
