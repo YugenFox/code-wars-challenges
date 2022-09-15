@@ -1,6 +1,6 @@
 //https://www.codewars.com/kata/57f24e6a18e9fad8eb000296/train/javascript
 
-//my code
+//my code test
 
 function howMuchILoveYou(nbPetals) {
     // your code
