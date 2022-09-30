@@ -1,6 +1,6 @@
 //https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/train/javascript
 
-//my code
+//my code test
 var countSheep = function (num){
     //your code here
     
