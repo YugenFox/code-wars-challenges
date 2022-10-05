@@ -15,6 +15,5 @@ function modifiedSum(a, n) {
     }, 0)
     
     return nthPowerArraySum - originalArraySum
-  }
+}
   console.log(modifiedSum(a, n))
-  
