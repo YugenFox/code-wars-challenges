@@ -1,5 +1,6 @@
 //https://www.codewars.com/kata/595aa94353e43a8746000120/train/javascript
 
+//my solution
 function findDeletedNumber(arr, mixArr) {
     let sortedMixArr = mixArr.sort(function (a,b) { return a - b; })
     
