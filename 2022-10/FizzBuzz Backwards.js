@@ -1,6 +1,6 @@
 //FizzBuzz with any number pair
 
-
+//my own problem
 function reverseFizzBuzz(array, num1, num2) {
     //ret array
 
