@@ -2,6 +2,8 @@
 
 let test1 = "http://github.com/carbonfive/raygun"
 let test2 = "http://www.bkj8ycolz9857s70g.us/error"
+
+//note you have to actually set url = url.replace("take out thing", "") for it to work. Does not change the url automatically just using .replace on it, for reference. 
 function domainName(url){
     retArr = []
     //remove http://
