@@ -18,3 +18,20 @@ function gimme (triplet) {
 //test cases
 // console.log(gimme([3,7,10]), 1) //7
 console.log(gimme([2,5,1]), 0) //2
+
+//cleaner - no clgs
+
+function gimme (triplet) {
+    //take arr of 3 indexes
+    //return the index that is the middle of the other two
+
+    //sort arr in ascending order, find value of index 1
+      //use.slice to not affect original triplet array with .sort()
+    let middleValue = triplet.slice().sort((a, b) => a - b)[1];
+  
+    //find where middle value appeared in original arr indexes
+ 
+    let midIndex = triplet.findIndex((e) => e === middleValue)
+
+    return midIndex
+}
