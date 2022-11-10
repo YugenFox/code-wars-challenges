@@ -1,5 +1,10 @@
 //https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/javascript
 
+//LESSONS LEARNED
+/*
+.sort() will change the order of the array whenever used. To make a copy, use .slice.sort(<do stuff>)
+*/
+
 function gimme (triplet) {
     //take arr of 3 indexes
     //return the index that is the middle of the other two
