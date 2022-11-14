@@ -3,6 +3,8 @@
 //LESSONS LEARNED
 /*
 .sort() will change the order of the array whenever used. To make a copy, use .slice.sort(<do stuff>)
+
+also, can use .sort(<stuff>)[1] as example to set something to that sorted arr with index of 1
 */
 
 function gimme (triplet) {
