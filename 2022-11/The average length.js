@@ -1,5 +1,12 @@
 //https://www.codewars.com/kata/5a430359e1ce0e35540000b1/train/javascript
 
+//TehOrange solution
+function averageLength(arr) {
+    const c = Math.round(arr.join('').length/arr.length)
+    return arr.map(e=>e[0].repeat(c))
+}
+
+//my solution
 function averageLength(arr) { 
     ///new array that takes arr indexes and turns them into numbers based on index length
     const numMap = arr.map(e => e.length)
