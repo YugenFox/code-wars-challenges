@@ -1,5 +1,12 @@
 //https://www.codewars.com/kata/5a430359e1ce0e35540000b1/train/javascript
 
+//GilSOlis solution
+function averageLength(arr){
+    let num = Math.round(arr.reduce((acc, cv) => acc + cv.length, 0) / arr.length )
+  
+    return arr.map(element => element[0].repeat(num))
+}
+
 //TehOrange solution
 function averageLength(arr) {
     const c = Math.round(arr.join('').length/arr.length)
