@@ -1,6 +1,6 @@
 //https://www.codewars.com/kata/5a430359e1ce0e35540000b1/train/javascript
 
-//GilSOlis solution
+//GilSolis solution
 function averageLength(arr){
     let num = Math.round(arr.reduce((acc, cv) => acc + cv.length, 0) / arr.length )
   
