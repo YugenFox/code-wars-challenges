@@ -1,5 +1,6 @@
 //https://www.codewars.com/kata/59f08f89a5e129c543000069/train/javascript
 
+//my solution
 function dup(s){
     retArray = []
 
