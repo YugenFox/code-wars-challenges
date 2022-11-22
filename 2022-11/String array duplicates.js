@@ -1,5 +1,37 @@
 //https://www.codewars.com/kata/59f08f89a5e129c543000069/train/javascript
 
+//my solution cleaner
+function dup(s){
+    retArray = []
+
+    for(let i = 0; i < s.length; i++){
+        //indexes
+        let currentChar = ''
+        let currString = s[i]
+        let retString = ''
+        for(let j = 0; j < s[i].length; j++){
+            //char in string index
+            //set last char seen in string
+            if(currentChar === ''){
+                //"current char is blank"
+                currentChar = currString[j]
+                //add letter to return array string
+                retString += currentChar
+            }else if(currString[j] !== currentChar){
+                //"not current char"
+                currentChar = currString[j]
+                //add letter to return array string since new char is different than old char
+                retString += currentChar
+            }
+            
+            
+            //only keep one char, ignore if same in front or behind. So want last in front of group
+        }
+        retArray.push(retString)
+    }
+    return retArray
+}
+
 //my solution
 function dup(s){
     retArray = []
