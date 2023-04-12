@@ -30,3 +30,5 @@ console.log(findNumber(5,10))
 console.log(findNumber(9.99998,10))
 console.log(findNumber(10.00002,10))
 console.log(findNumber(10.00003,10))
+
+//code wars was dumb in the way it was layed out. Above works with general idea
