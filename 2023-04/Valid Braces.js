@@ -11,11 +11,13 @@ function validBraces(braces){
       case '}': if (depth.pop() != '{') return false; break;
     }
   }
+  //If never got a closing and only ([{, the return below would show false 
   return depth.length == 0;
 }
 
 //tests
 console.log(validBraces("({})"), "be: true")
+console.log(validBraces("({})[({})]"), "be: true")
 
 //main lesson is anytime there is a closing thing )]} the .pop() --last thing in the array before then would have to be its match ([{
 
