@@ -2,7 +2,7 @@
 
 function duplicateCount(text){
   let counts = {}
-  //counts total occurance of each char (makes all values lowercase for counting)
+  //counts total occurrence of each char (makes all values lowercase for counting)
   for (letter in text){
     let char = text[letter].toLowerCase()
     counts[char] = (counts[char] || 0) + 1
